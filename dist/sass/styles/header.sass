@@ -1,0 +1,64 @@
+.header
+    background-color: $accent
+    margin-bottom: 30px
+    min-height: 752px
+
+.header__top
+    padding-top: 60px
+    margin-bottom: 110px
+
+.logo
+    display: block
+    width: 25%
+
+.product
+    position: relative
+    @extend %clearfix
+    z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 350px
+        height: 350px
+        background-color: $dark-turquoise
+        border-radius: 50% 
+        z-index: -1
+
+.product__left,
+.product__right
+    width: 50%
+    float: left
+
+.product__left
+    text-align: right
+    padding-right: 85px
+
+.product__right
+    padding-left: 85px
+
+.product__item
+    margin-bottom: 46px
+
+.product__item--right-margin
+    margin-right: 37px
+
+.product__item--left-margin
+    margin-left: 37px
+
+.product__text
+    font-size: 22px
+    font-family: $alt-font
+    display: inline-block
+    vertical-align: middle
+    width: 78%
+
+.product__img
+    width: 85px
+    height: 85px
+    background-color: #ffffff
+    border-radius: 50%
+    display: inline-block    
+    vertical-align: middle

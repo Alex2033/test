@@ -1,0 +1,98 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title Тестовое задание
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(property='og:image', content='path/to/image.jpg')
+    // Chrome, Firefox OS and Opera
+    meta(name='theme-color', content='#000')
+    // Windows Phone
+    meta(name='msapplication-navbutton-color', content='#000')
+    // iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    link(rel='stylesheet', href='css/main.min.css')
+  body
+
+    // WRAPPER 
+    .wrapper
+
+      include ../modules/header
+        
+      main.main
+
+        .container.main__container
+
+          // begin content
+          .content
+            // begin content-header
+            header.content-header.content__head
+              .content-header__left
+                .content-header__photo
+                .content-header__text
+                  h1.title.content-header__title Lorem Ipsum is simply dummy text 
+                  p.
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since 
+                    the 1500s.
+              .content-header__right
+                // begin stats
+                ul.stats.content-header__list
+                  li.stats__item
+                    .stats__text Like
+                    .stats__number 
+                      .stats__number-text 557
+                  li.stats__item
+                    .stats__text Share
+                    .stats__number
+                      .stats__number-text 351
+                // end stats
+            // end content-header
+
+            // begin goods
+            ul.goods.content__list
+              li.goods__item
+                .goods__img
+                h2.goods__title Heading
+                .goods__text
+                  p.
+                    Phasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, 
+                    quis lobortis risus nunc nec nisi. Maecenas et turpis vitae velit 
+                    volutpat porttitor a sit amet est. Uthasellus facilisis, nunc in lacinia auctor, 
+                    eros lacus aliquet velit, quis lobortis risus nunc nec nisi.
+              li.goods__item
+                .goods__img
+                h2.goods__title Heading
+                .goods__text
+                  p.
+                    Phasellus facilisis, nunc in lacinia auctor, eros lacus aliquet velit, quis 
+                    lobortis risus nunc nec nisi. Maecenas et turpis vitae velit volutpat 
+                    porttitor a sit amet est. Uthasellus facilisis, nunc in lacinia auctor, 
+                    eros lacus aliquet velit, quis lobortis risus nunc nec nisi.
+              li.goods__item
+                .goods__img
+                h2.goods__title Heading
+                .goods__text
+                  p.
+                    Phasellus facilisis, nunc in lacinia auctor, eros lacus 
+                    aliquet velit, quis lobortis risus nunc nec nisi. Maecenas et 
+                    turpis vitae velit volutpat porttitor a sit amet est. Uthasellus facilisis, 
+                    nunc in lacinia auctor, eros lacus aliquet velit, quis lobortis risus nunc nec nisi.
+              li.goods__item.goods__button
+                a(href="#").button Order
+            // end goods
+
+          // end content
+
+          // begin sidebar
+          aside.sidebar
+          // end sidebar
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

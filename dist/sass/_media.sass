@@ -1,0 +1,173 @@
+@import "vars"
+
+@media (max-width: 1100px)
+    .product__text
+        width: 70%
+
+    .content-header__text
+        width: 75%
+
+@media (max-width: 992px)
+    .header
+        min-height: 600px
+
+    .header__top
+        margin-bottom: 80px
+
+    .logo
+        width: 33.3333%
+
+    .product
+        &::before
+            width: 270px
+            height: 270px
+
+    .product__left
+        padding-right: 70px
+
+    .product__right
+        padding-left: 70px
+
+    .product__img
+        width: 60px
+        height: 60px
+
+    .product__text
+        font-size: 19px
+
+    .content
+        width: calc(70% - 15px)
+        margin-right: 15px
+
+    .sidebar
+        margin-left: 15px
+        width: calc(30% - 15px)
+
+    .content-header__left
+        padding-top: 15px
+        padding-left: 15px
+
+    .content-header__photo
+        width: 100px
+        height: 100px
+
+    .content-header__text
+        padding-bottom: 15px
+
+    .content-header__text
+        width: 70%
+
+    .goods
+        grid-template-columns: 1fr
+        grid-row-gap: 30px
+
+    .goods__text
+        text-align: center
+
+    .footer
+        padding-top: 70px
+        padding-bottom: 70px
+
+@media (max-width: 767px)
+    .logo
+        margin-left: auto
+        margin-right: auto
+
+    .product
+        &::before
+            display: none
+
+    .product__left
+        padding-right: 30px
+
+    .product__right
+        padding-left: 30px
+
+    .product__img
+        margin-left: 5px
+        margin-right: 5px
+        
+    .product__item--right-margin
+        margin-right: 0
+
+    .product__item--left-margin
+        margin-left: 0
+
+    .product__text
+        width: 68%
+
+    .content, .sidebar
+        width: 100%
+        margin-left: 0
+        margin-right: 0
+        padding-bottom: 0
+        margin-bottom: 0
+
+    .content
+        margin-bottom: 40px
+
+    .sidebar
+        min-height: 100px // Для наглядности
+        
+        
+    .footer
+        padding-top: 40px
+        padding-bottom: 40px
+
+@media (max-width: 576px)
+    .header
+        height: initial
+
+    .header__top
+        margin-bottom: 40px
+
+    .logo
+        width: 40%
+
+    .product__left,
+    .product__right
+        width: 100%
+        margin-bottom: 20px
+
+    .product__item
+        text-align: center
+        margin-bottom: 20px
+
+    .product__left
+        padding-right: 0
+
+    .product__right
+        padding-left: 0
+
+    .product__text
+        width: 60%
+
+    .content-header
+        text-align: center
+
+    .content-header__left,
+    .content-header__right
+        padding-bottom: 0
+        margin-bottom: 0
+        width: 100%
+
+    .content-header__photo,
+    .content-header__text
+        float: none
+
+    .content-header__text
+        width: 100%
+
+    .content-header__photo
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 15px
+
+    .stats
+        font-size: 0
+
+    .stats__item
+        display: inline-block
+        width: initial
+        &:not(:last-child)
+            margin-right: 25px
